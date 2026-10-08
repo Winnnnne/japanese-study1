@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Japanese Study — Bài 4–7</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand" onclick="showHome()"><span class="brand-icon">日</span><div><strong>Japanese Study</strong><small>Bài 4–7</small></div></div>
+    <div class="top-actions">
+      <button class="ghost" onclick="toggleSearch()">⌕ Tìm kiếm</button>
+      <button class="ghost" onclick="showStats()">◫ Tiến độ</button>
+    </div>
+  </header>
+  <div id="searchBar" class="searchbar hidden">
+    <input id="searchInput" placeholder="Tìm từ vựng, Kanji, mẫu ngữ pháp..." oninput="renderSearch(this.value)">
+  </div>
+  <main id="app"></main>
+  <footer>Japanese Study • Nội dung dựa trên tài liệu bạn cung cấp • Bài 4–7</footer>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
